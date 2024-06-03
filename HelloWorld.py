@@ -1,4 +1,4 @@
-from classes import Person
+from classes import Person, Pet, Dog, Cat
 
 
 # Declaring Variables
@@ -128,3 +128,15 @@ else:
     
 print(str(dave.first_name) + ' is ')
 dave.run()
+
+# class inheritance examples
+p = Pet("Tim", 19)
+p.show()
+c = Cat("Bill", 34)
+c.show()
+d = Dog("Jill", 25)
+d.show()
+
+p.speak()
+c.speak()
+d.speak()

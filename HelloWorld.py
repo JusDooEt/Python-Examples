@@ -1,8 +1,12 @@
+from classes import Person
+
+
 # Declaring Variables
 age = 20                # int
 price = 19.95           # float
 first_name = "Cameron"  # string
 is_online = True        # boolean
+dave = Person("David", "Matthews", 34, True) # Person class object
 
 # Prints to console like cout
 print(age)
@@ -111,3 +115,16 @@ for number in range(5):     # Declaing the range in the for loop
 numbers = (1, 2, 3, 3)          # Immutable/Unchangable (think const in c++)
 numbers.count(3)                # Counts the amount of time 3 occurs in the tuple
 numbers.index(3)                # Returns the index of the first instance of 3 in the tuple. This will return 2.
+
+# Class examples
+print(str(dave.first_name) + ' ' + str(dave.last_name))
+print(str(dave.age))
+print("Does " + dave.first_name + " like pizza?")
+
+if bool(dave.likes_pizza):
+    print("Yes!!! =)")
+else:
+    print("No... =(")    
+    
+print(str(dave.first_name) + ' is ')
+dave.run()
